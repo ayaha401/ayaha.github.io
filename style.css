@@ -1,12 +1,39 @@
 @charset "UTF-8";
 
-/* .article
+body
 {
-    background-color: darkgray;
-} */
+    background-color: rgb(45, 45, 48);
+}
+.article
+{
+    width: 70%;
+    background-color: rgb(19, 19, 26);
+}
 
-img
+.article .title
 {
-    width: 50%;
-    height: 50%;
+    color: white;
+}
+
+.flex
+{
+    
+    display: flex;
+}
+
+.flex .image
+{
+    width: 256;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex .code
+{
+    margin: 0 0 0 20px;
+    padding: 0;
+    white-space: pre;
+    color: white;
 }
