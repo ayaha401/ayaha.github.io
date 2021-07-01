@@ -28,6 +28,20 @@ float sdBox(vec3 p, float s)
             <h2>Circle</h2>
             <p>circleProgram</p>
         </article>
+
+        <article class="article">
+            <h2>Line</h2>
+            <p>マイク入力によって横幅の変わる縦線</p>
+<pre>
+<code>
+vec3 spec;  // マイクからの入力
+col += abs(1.0/uv.x) * spec.y;
+</code>
+</pre>
+            <figure>
+                <img src="img/line01.png" alt="">
+            </figure>
+        </article>
     </div>
     
     
