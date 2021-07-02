@@ -6,22 +6,71 @@
     </head>
     <body>
         <h1>line01詳細</h1>
-    </body>
-
-    <div>
-        <article>
-<pre>
-<code>
-col += 1.0/uv.x * spectrum.y;
-</code>
-</pre>
-            <figure>
-                <img src="img/line01_01.png" alt="">
-            </figure>
-            <p>x座標に対してfoldして完成</p>
-            <figure>
-                <img src="img/line01.png" alt="">
-            </figure>
-        </article>
+        <p>マイク入力によって横幅の変わる縦線</p>
+    <div class="container">
+<!-- ======================== Left Menu =====================================-->
+    <div class="left">
+        <h2 class="title">MENU</h2>
+        <ul>
+            <li><a href>A</a></li>
+            <li><a href>B</a></li>
+            <li><a href>C</a></li>
+        </ul>
     </div>
+
+<!-- ======================== Right =====================================-->
+    <div class="right">
+<!-- ======================== article_01 =====================================-->
+        <div class="article">
+            <div class="flex">
+                <figure class="detailImage"><img src="img/line01/line01_detail/line01_01.png"></figure>
+                <p class="code">
+void main(void)
+{
+    float col = 0.0;
+    vec2 uv = -1. + 2. * inData.v_texcoord;
+    col += uv.x;
+    fragColor = vec4(col, col, col, 1.0);
+}
+                </p>
+            </div>
+        </div>
+<!-- ======================== article_02 =====================================-->
+    <div class="article">
+        <div class="flex">
+            <figure class="detailImage"><img src="img/line01/line01_detail/line01_02.png"></figure>
+            <p class="code">
+void main(void)
+{
+    float col = 0.0;
+    vec2 uv = -1. + 2. * inData.v_texcoord;
+    col += 1.0/uv.x * spectrum.y;
+    fragColor = vec4(col, col, col, 1.0);
+}
+            </p>
+        </div>
+    </div>
+
+<!-- ======================== article_03 =====================================-->
+
+    <div class="article">
+        <div class="flex">
+            <figure class="detailImage"><img src="img/line01/line01_detail/line01_03.png"></figure>
+            <p class="code">
+void main(void)
+{
+    float col = 0.0;
+    vec2 uv = -1. + 2. * inData.v_texcoord;
+    col += asb(1.0/uv.x) * spectrum.y;
+    fragColor = vec4(col, col, col, 1.0);
+}
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+
+    </div>
+    </body>
 </html>
