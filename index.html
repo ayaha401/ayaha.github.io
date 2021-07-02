@@ -7,47 +7,80 @@
     <body>
         <h1>シェーダーメモ</h1>
         <p>シェーダー書くためのメモ</p>
-    
-    <div>
-        <article class="article"></article>
-            <h2>Box</h2>
-            <p>正確ではないが文字数が少ない</p>
-<pre>
-<code>
-float sdBox(vec3 p, float s)
-{
-    p = abs(p) - s;
-    return max(max(p.x, p.y), p.z);
-}
-</code>
-</pre>
 
-        </article>
+    <div class="container">
+<!-- ======================== Left Menu =====================================-->
+    <div class="left">
+        <h2 class="title">MENU</h2>
+        <ul>
+            <li><a href>A</a></li>
+            <li><a href>B</a></li>
+            <li><a href>C</a></li>
+        </ul>
+    </div>
 
-        <article>
-            <h2>Circle</h2>
-            <p>circleProgram</p>
-        </article>
-
-
-        <h2>Line</h2>
+<!-- ======================== Right =====================================-->
+    <div class="right">
+<!-- ======================== Box =====================================-->
+        <h2 class="title">Box</h2>
         <div class="article">
-            
+            <p class="title">正確ではないが文字数が少ない</p>
+            <div class="flex">
+                <figure class="image"><img src="img/box01.png"></figure>
+                <p class="code">
+float sdBox(vec2 p, float s)
+{
+p = abs(p) - s;
+return max(p.x, p.y);
+}
+                </p>
+            </div>
+        </div>
+
+<!-- ======================== Line =====================================-->
+        <h2 class="title">Line</h2>
+        <div class="article">
             <p class="title">マイク入力によって横幅の変わる縦線</p>
             <!-- <a href="line01.html">詳細</a> -->
             
             <div class="flex">
-                <figure class="image"><img src="img/line02.png"></figure>
+                <figure class="image"><img src="img/line01.png"></figure>
                 <p class="code">
 vec3 spec;  // マイクからの入力
 col += abs(1.0/uv.x) * spec.y;
                 </p>
             </div>
         </div>
-        
+
+        <div class="article">
+            <p class="title">揺れる縦線</p>
+            <div class="flex">
+                <figure class="image"><img src="img/line02.png"></figure>
+                <p class="code">
+vec2 uv = -1. + 2. * inData.v_texcoord;
+uv.x += sin(time * 8.0 + uv.y * 1.5) * spec.y;
+col += abs(0.066/uv.x) * spec.y;
+                </p>
+            </div>
+        </div>
+
+<!-- ======================== Normalize =====================================-->
+        <h2 class="title">Normalize</h2>
+        <div class="article">
+            <p class="title">uvの正規化</p>
+            <div class="flex">
+                <figure class="image"><img src="img/normalize01.png"></figure>
+                <p class="code">
+vec2 uv = 
+(2.0*inData.v_texcoord-1.0)*resolution/min(resolution.x,resolution.y);
+                </p>
+            </div>
+        </div>
+    </div>
     </div>
     
-    
+
+
     </body>
 
 

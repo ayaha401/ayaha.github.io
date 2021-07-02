@@ -4,9 +4,37 @@ body
 {
     background-color: rgb(45, 45, 48);
 }
+
+div.container
+{
+    /* content:"";
+    display: block;
+    clear: both; */
+    display: flex;
+}
+
+div.left
+{
+    background-color: rgb(19, 19, 26);
+    width: 300px;
+    margin: 10px;
+}
+
+div.right
+{
+    width: 75%;
+}
+
+h2.title
+{
+    color: white;
+    margin: 10px;
+    padding: 0px 0px 0px 30px;
+    background-color: rgb(19, 19, 26);
+}
 .article
 {
-    width: 70%;
+    margin: 10px;
     background-color: rgb(19, 19, 26);
 }
 
