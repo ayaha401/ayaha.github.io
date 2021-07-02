@@ -24,30 +24,30 @@
         <div class="article">
             <div class="flex">
                 <figure class="detailImage"><img src="img/line01/line01_detail/line01_01.png"></figure>
-                <p class="code">
-void main(void)
-{
-    float col = 0.0;
-    vec2 uv = -1. + 2. * inData.v_texcoord;
-    col += uv.x;
-    fragColor = vec4(col, col, col, 1.0);
-}
-                </p>
+                <div class="code">
+                    <p class="n">void main(void)</p> 
+                    <p class="n">{</p>
+                        <p class="i">float col = 0.0;</p> 
+                        <p class="i">vec2 uv = -1. + 2. * inData.v_texcoord;</p> 
+                        <span class="icol">col += uv.x;</span>
+                        <p class="i">fragColor = vec4(col, col, col, 1.0);</p> 
+                    <p class="n">}</p> 
+                </div>
             </div>
         </div>
 <!-- ======================== article_02 =====================================-->
     <div class="article">
         <div class="flex">
             <figure class="detailImage"><img src="img/line01/line01_detail/line01_02.png"></figure>
-            <p class="code">
-void main(void)
-{
-    float col = 0.0;
-    vec2 uv = -1. + 2. * inData.v_texcoord;
-    col += 1.0/uv.x * spectrum.y;
-    fragColor = vec4(col, col, col, 1.0);
-}
-            </p>
+            <div class="code">
+                <p class="n">void main(void)</p> 
+                <p class="n">{</p>
+                    <p class="i">float col = 0.0;</p> 
+                    <p class="i">vec2 uv = -1. + 2. * inData.v_texcoord;</p> 
+                    <span class="icol">col += 1.0/uv.x * spectrum.y;</span>
+                    <p class="i">fragColor = vec4(col, col, col, 1.0);</p> 
+                <p class="n">}</p> 
+            </div>
         </div>
     </div>
 
@@ -56,15 +56,15 @@ void main(void)
     <div class="article">
         <div class="flex">
             <figure class="detailImage"><img src="img/line01/line01_detail/line01_03.png"></figure>
-            <p class="code">
-void main(void)
-{
-    float col = 0.0;
-    vec2 uv = -1. + 2. * inData.v_texcoord;
-    col += asb(1.0/uv.x) * spectrum.y;
-    fragColor = vec4(col, col, col, 1.0);
-}
-            </p>
+            <div class="code">
+                <p class="n">void main(void)</p> 
+                <p class="n">{</p> 
+                    <p class="i">float col = 0.0;</p> 
+                    <p class="i">vec2 uv = -1. + 2. * inData.v_texcoord;</p> 
+                    <span class="icol">col += asb(1.0/uv.x) * spectrum.y;</span> 
+                    <p class="i">fragColor = vec4(col, col, col, 1.0);</p> 
+                <p class="n">}</p> 
+            </div>
         </div>
     </div>
 

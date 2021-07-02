@@ -71,6 +71,26 @@ h2.title
 {
     margin: 0 0 0 20px;
     padding: 0;
-    white-space: pre;
+    /* white-space: pre; */
     color: white;
+}
+
+/* インデント用 */
+p.i
+{
+    margin: 0px 0px 0px 20px;
+}
+
+/* インデント ＋ 背景色 */
+span.icol
+{
+    margin: 0px 0px 0px 20px;
+    background-color: rgb(102, 55, 102);
+
+}
+
+/* 通常 */
+p.n
+{
+    margin: 0px;
 }
