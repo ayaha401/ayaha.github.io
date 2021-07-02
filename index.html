@@ -26,7 +26,7 @@
         <div class="article">
             <p class="title">正確ではないが文字数が少ない</p>
             <div class="flex">
-                <figure class="image"><img src="img/box01.png"></figure>
+                <figure class="image"><img src="img/box01/box01.png"></figure>
                 <p class="code">
 float sdBox(vec2 p, float s)
 {
@@ -44,7 +44,7 @@ float sdBox(vec2 p, float s)
             <!-- <a href="line01.html">詳細</a> -->
             
             <div class="flex">
-                <figure class="image"><img src="img/line01.png"></figure>
+                <figure class="image"><img src="img/line01/line01.png"></figure>
                 <p class="code">
 vec3 spec;  // マイクからの入力
 col += abs(1.0/uv.x) * spec.y;
@@ -55,7 +55,7 @@ col += abs(1.0/uv.x) * spec.y;
         <div class="article">
             <p class="title">揺れる縦線</p>
             <div class="flex">
-                <figure class="image"><img src="img/line02.png"></figure>
+                <figure class="image"><img src="img/line02/line02.png"></figure>
                 <p class="code">
 vec2 uv = -1. + 2. * inData.v_texcoord;
 uv.x += sin(time * 8.0 + uv.y * 1.5) * spec.y;
@@ -69,7 +69,7 @@ col += abs(0.066/uv.x) * spec.y;
         <div class="article">
             <p class="title">uvの正規化</p>
             <div class="flex">
-                <figure class="image"><img src="img/normalize01.png"></figure>
+                <figure class="image"><img src="img/normalize/normalize01.png"></figure>
                 <p class="code">
 vec2 uv = 
 (2.0*inData.v_texcoord-1.0)*resolution/min(resolution.x,resolution.y);
