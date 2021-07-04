@@ -10,74 +10,75 @@
 
     <div class="container">
 <!-- ======================== Left Menu =====================================-->
-    <div class="left">
-        <h2 class="title">MENU</h2>
-        <ul>
-            <li><a href>A</a></li>
-            <li><a href>B</a></li>
-            <li><a href>C</a></li>
-        </ul>
-    </div>
+        <div class="left">
+            <h2 class="title">MENU</h2>
+            <ul>
+                <li><a href>A</a></li>
+                <li><a href>B</a></li>
+                <li><a href>C</a></li>
+            </ul>
+        </div>
 
 <!-- ======================== Right =====================================-->
-    <div class="right">
+        <div class="right">
 <!-- ======================== Box =====================================-->
-        <h2 class="title">Box</h2>
-        <div class="article">
-            <p class="title">正確ではないが文字数が少ない</p>
-            <div class="flex">
-                <figure class="image"><img src="img/box01/box01.png"></figure>
-                <div class="code">
-                    <p class="n">float sdBox(vec2 p, float s)</p> 
-                    <p class="n">{</p>
-                        <p class="i">p = abs(p) - s;</p> 
-                        <p class="i">return max(p.x, p.y);</p> 
-                    <p class="n">}</p> 
+            <h2 class="title">Box</h2>
+            <div class="article">
+                <p class="title">正確ではないが文字数が少ない</p>
+                <div class="flex">
+                    <figure class="image"><img src="img/box01/box01.png"></figure>
+                    <div class="code">
+                        <p class="n">float sdBox(vec2 p, float s)</p> 
+                        <p class="n">{</p>
+                            <p class="i">p = abs(p) - s;</p> 
+                            <p class="i">return max(p.x, p.y);</p> 
+                        <p class="n">}</p> 
+                    </div>
                 </div>
             </div>
-        </div>
 
 <!-- ======================== Line =====================================-->
-        <h2 class="title">Line</h2>
-        <div class="article">
-            <p class="title">マイク入力によって横幅の変わる縦線<a href="line01.html">詳細</a></p>
-            <div class="flex">
-                <figure class="image"><img src="img/line01/line01.png"></figure>
-                <div class="code">
-                    <p class="n">vec3 spec;  // マイクからの入力</p> 
-                    <p class="n">col += abs(1.0/uv.x) * spec.y;</p> 
+            <h2 class="title">Line</h2>
+            <div class="article">
+                <p class="title">マイク入力によって横幅の変わる縦線<a href="line01.html">詳細</a></p>
+                <div class="flex">
+                    <figure class="image"><img src="img/line01/line01.png"></figure>
+                    <div class="code">
+                        <p class="n">vec3 spec;  // マイクからの入力</p> 
+                        <p class="n">col += abs(1.0/uv.x) * spec.y;</p> 
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="article">
-            <p class="title">揺れる縦線</p>
-            <div class="flex">
-                <figure class="image"><img src="img/line02/line02.png"></figure>
-                <div class="code">
-                    <p class="n">vec2 uv = -1. + 2. * inData.v_texcoord;</p> 
-                    <p class="n">uv.x += sin(time * 8.0 + uv.y * 1.5) * spec.y;</p> 
-                    <p class="n">col += abs(0.066/uv.x) * spec.y;</p> 
+            <div class="article">
+                <p class="title">揺れる縦線</p>
+                <div class="flex">
+                    <figure class="image"><img src="img/line02/line02.png"></figure>
+                    <div class="code">
+                        <p class="n">vec2 uv = -1. + 2. * inData.v_texcoord;</p> 
+                        <p class="n">uv.x += sin(time * 8.0 + uv.y * 1.5) * spec.y;</p> 
+                        <p class="n">col += abs(0.066/uv.x) * spec.y;</p> 
+                    </div>
                 </div>
             </div>
-        </div>
 
 <!-- ======================== Normalize =====================================-->
-        <h2 class="title">Normalize</h2>
-        <div class="article">
-            <p class="title">uvの正規化</p>
-            <div class="flex">
-                <figure class="image"><img src="img/normalize/normalize01.png"></figure>
-                <div class="code">
-                    <p class="n">vec2 uv =</p>  
-                    <p class="n">(2.0*inData.v_texcoord-1.0)*resolution/min(resolution.x,resolution.y);</p> 
+            <h2 class="title">Normalize</h2>
+            <div class="article">
+                <p class="title">uvの正規化</p>
+                <div class="flex">
+                    <figure class="image"><img src="img/normalize/normalize01.png"></figure>
+                    <div class="code">
+                        <p class="n">vec2 uv =</p>  
+                        <p class="n">(2.0*inData.v_texcoord-1.0)*resolution/min(resolution.x,resolution.y);</p> 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     
 
+    
 
     </body>
 
