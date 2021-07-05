@@ -61,6 +61,23 @@
                     </div>
                 </div>
             </div>
+<!-- ======================== Hexagon =====================================-->
+            <h2 class="title">Hexagon</h2>
+            <div class="article">
+                <p class="title">六角形</p>
+                <div class="flex">
+                    <figure class="image"><img src="img/hexagon01/hexagon01.png"></figure>
+                    <div class="code">
+                        <p class="n">float hexDist(vec2 p)</p>
+                        <p class="n">{</p>
+                            <p class="i">p = abs(p);</p>
+                            <p class="i">float c = dot(p, normalize(vec2(1, 1.73)));</p>
+                            <p class="i">c = max(c, p.x);</p>
+                            <p class="i">return c;</p>
+                        <p class="n">}</p>
+                    </div>
+                </div>
+            </div>
 
 <!-- ======================== Normalize =====================================-->
             <h2 class="title">Normalize (正直わからない)</h2>
