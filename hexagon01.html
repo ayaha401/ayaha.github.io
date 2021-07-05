@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>hexagon01詳細</h1>
+        <p>六角形</p>
+    <div class="container">
+<!-- ======================== Left Menu =====================================-->
+        <div class="left">
+            <h2 class="title">MENU</h2>
+            <ul>
+                <li><a href>A</a></li>
+                <li><a href>B</a></li>
+                <li><a href>C</a></li>
+            </ul>
+        </div>
+
+<!-- ======================== Right =====================================-->
+        <div class="right">
+<!-- ======================== article_01 =====================================-->
+            <div class="article">
+                <div class="flex">
+                    <figure class="detailImage"><img src="img/hexagon01/hexagon01_detail/hexagon01_01.png"></figure>
+                    <div class="code">
+                        <p class="n">float hexDist(vec2 p)</p>
+                        <p class="n">{</p>
+                            <span class="icol">float c = step(p.x, 0.3);</span>
+                            <p class="i">return c;</p>
+                        <p class="n">}</p>
+                    </div>
+                </div>
+            </div>
+<!-- ======================== article_02 =====================================-->
+            <div class="article">
+                <div class="flex">
+                    <figure class="detailImage"><img src="img/hexagon01/hexagon01_detail/hexagon01_02.png"></figure>
+                    <div class="code">
+                        <p class="n">float hexDist(vec2 p)</p>
+                        <p class="n">{</p>
+                            <span class="icol">float c = dot(p,normalize(vec2(1, 1.73)));</span> <br>
+                            <span class="icol">c = step(c, 0.3);</span>
+                            <p class="i">return c;</p>
+                        <p class="n">}</p>
+                    </div>
+                </div>
+            </div>
+<!-- ======================== article_03 =====================================-->
+            <div class="article">
+                <div class="flex">
+                    <figure class="detailImage"><img src="img/hexagon01/hexagon01_detail/hexagon01_03.png"></figure>
+                    <div class="code">
+                        <p class="n">float hexDist(vec2 p)</p>
+                        <p class="n">{</p>
+                            <p class="i">float c = dot(p,normalize(vec2(1, 1.73)));</p>
+                            <span class="icol">c = max(c, p.x);</span>
+                            <p class="i">c = step(c, 0.3);</p>
+                            <p class="i">return c;</p>
+                        <p class="n">}</p>
+                    </div>
+                </div>
+            </div>
+<!-- ======================== article_04 =====================================-->
+            <div class="article">
+                <div class="flex">
+                    <figure class="detailImage"><img src="img/hexagon01/hexagon01_detail/hexagon01_04.png"></figure>
+                    <div class="code">
+                        <p class="n">float hexDist(vec2 p)</p>
+                        <p class="n">{</p>
+                            <span class="icol">p = abs(p)</span>
+                            <p class="i">float c = dot(p,normalize(vec2(1, 1.73)));</p>
+                            <p class="i">c = max(c, p.x);</p>
+                            <p class="i">c = step(c, 0.3);</p>
+                            <p class="i">return c;</p>
+                        <p class="n">}</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </body>
+</html>
