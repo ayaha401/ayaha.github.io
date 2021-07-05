@@ -63,7 +63,7 @@
             </div>
 
 <!-- ======================== Normalize =====================================-->
-            <h2 class="title">Normalize</h2>
+            <h2 class="title">Normalize (正直わからない)</h2>
             <div class="article">
                 <p class="title">uvの正規化</p>
                 <div class="flex">
@@ -71,6 +71,17 @@
                     <div class="code">
                         <p class="n">vec2 uv =</p>  
                         <p class="n">(2.0*inData.v_texcoord-1.0)*resolution/min(resolution.x,resolution.y);</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="article">
+                <p class="title">uvの正規化</p>
+                <div class="flex">
+                    <figure class="image"><img src="img/normalize/normalize02.png"></figure>
+                    <div class="code">
+                        <p class="n">vec2 uv = (gl_FragCoord.xy / resolution) * 2.0 - 1.0;</p>
+                        <p class="n">uv.x *= resolution.x / resolution.y;</p>
                     </div>
                 </div>
             </div>
