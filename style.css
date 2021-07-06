@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+header
+{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header ul
 {
     list-style-type: none;
@@ -25,7 +32,9 @@ header li a
     display: block;
     color: black;
     text-align: center;
+    padding: 14px, 16px;
     text-decoration: none;
+    padding: 14px 16px;
 }
 
 header li a :hover
