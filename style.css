@@ -160,6 +160,11 @@ span.icol
 
 }
 
+span.ncol
+{
+    background-color: rgb(102, 55, 102);
+}
+
 /* 通常 */
 p.n
 {
