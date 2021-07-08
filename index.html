@@ -38,7 +38,7 @@
                 </p>
                 
                 <div class="flex">
-                    <figure class="image"><img src="img/box01/box01.png"></figure>
+                    <figure class="image"><img src="img/boxNormal/box01.png"></figure>
                     <div class="code">
                         <p class="n">float sdBox(vec2 p, float s)</p> 
                         <p class="n">{</p>
@@ -55,11 +55,11 @@
                 <p class="title">
                     マイク入力によって横幅の変わる縦線
                     <h class="urlbrackets">(<a href="https://vimeo.com/51993089">参考元</a>)</h>
-                    <h class="urlbrackets">(<a href="line01.html">詳細</a>)</h>
+                    <h class="urlbrackets">(<a href="lineScale.html">詳細</a>)</h>
                     
                 </p>
                 <div class="flex">
-                    <figure class="image"><img src="img/line01/line01.png"></figure>
+                    <figure class="image"><img src="img/lineScale/line01.png"></figure>
                     <div class="code">
                         <p class="n">vec3 spec;  // マイクからの入力</p> 
                         <p class="n">col += abs(1.0/uv.x) * spec.y;</p> 
@@ -73,7 +73,7 @@
                     <h class="urlbrackets">(<a href="https://vimeo.com/51993089">参考元</a>)</h>
                 </p>
                 <div class="flex">
-                    <figure class="image"><img src="img/line02/line02.png"></figure>
+                    <figure class="image"><img src="img/lineShake/line01.png"></figure>
                     <div class="code">
                         <p class="n">vec2 uv = -1. + 2. * inData.v_texcoord;</p> 
                         <p class="n">uv.x += sin(time * 8.0 + uv.y * 1.5) * spec.y;</p> 
@@ -86,10 +86,10 @@
             <div class="article">
                 <p class="title">
                     斜めの平面
-                    <h class="urlbrackets">(<a href="flat01.html">詳細</a>)</h>
+                    <h class="urlbrackets">(<a href="flatDiagonal.html">詳細</a>)</h>
                 </p>
                 <div class="flex">
-                    <figure class="image"><img src="img/flat01/flat01.png"></figure>
+                    <figure class="image"><img src="img/flatDiagonal/flat01.png"></figure>
                     <div class="code">
                         <p class="n">float c = dot(vec2(uv), normalize(vec2(1.0, 1.0)));</p>
                     </div>
@@ -102,7 +102,7 @@
                     <h class="urlbrackets">(<a href="flatNormal.html">詳細</a>)</h>
                 </p>
                 <div class="flex">
-                    <figure class="image"><img src="img/flat02/flat02.png"></figure>
+                    <figure class="image"><img src="img/flatNormal/flat01.png"></figure>
                     <div class="code">
                         <p class="n">float c = uv.x;</p>
                     </div>
@@ -118,10 +118,10 @@
                 <p class="title">
                     六角形
                     <h class="urlbrackets">(<a href="https://youtu.be/VmrIDyYiJBA?t=119">参考元</a>)</h>
-                    <h class="urlbrackets">(<a href="hexagon01.html">詳細</a>)</h>
+                    <h class="urlbrackets">(<a href="hexagonNormal.html">詳細</a>)</h>
                 </p>
                 <div class="flex">
-                    <figure class="image"><img src="img/hexagon01/hexagon01.png"></figure>
+                    <figure class="image"><img src="img/hexagonNormal/hexagon01.png"></figure>
                     <div class="code">
                         <p class="n">float hexDist(vec2 p)</p>
                         <p class="n">{</p>
