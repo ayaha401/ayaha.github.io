@@ -87,12 +87,30 @@ div.container
 {
     flex-basis: 250px;
     height: auto;
-    flex-grow: 3;
-    
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 .flex-item .artImg
 {
+    display: block;
+    width: 100%;
+}
+
+.flex-item .hoverGif
+{
+    display: none;
+}
+
+.flex-item:hover .artImg
+{
+    display: none !important;
+    
+}
+
+.flex-item:hover .hoverGif
+{
+    display: block !important;
     width: 100%;
 }
 
