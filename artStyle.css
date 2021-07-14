@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+header
+{
+    /* width: 60%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul
+{
+    /* list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li:not(:first-child)::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%);
+    width: 0;
+    height: 80%;
+    border-left: 1px solid black;
+}
+
+header li a
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px, 16px;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+header li a:hover
+{
+    color: #ffffff;
+    background-color: rgb(103, 103, 105);
+}
+
+header li a.active
+{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(52, 52, 58);
+}
+
+body
+{
+    background-color: rgb(45, 45, 48);
+}
+
+ul
+{
+    margin: 10px;
+    padding: 0px;
+    list-style-type: none;
+    background-color: white;
+}
+
+div.container
+{
+    display: flex;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    
+}
+
+.flex-item
+{
+    flex-basis: 250px;
+    height: auto;
+    flex-grow: 3;
+    
+}
+
+.flex-item .artImg
+{
+    width: 100%;
+}
+
+.order-1 {order: -1;}
+.order-2 {order: -2;}
+.order-3 {order: -3;}
+.order-4 {order: -4;}
+.order-5 {order: -5;}
+.order-6 {order: -6;}
